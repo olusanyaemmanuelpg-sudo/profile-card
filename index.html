@@ -1,0 +1,159 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<meta
+			name="description"
+			content="Web Deji — Frontend Developer | Focused on building clean UI" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Web Deji — Profile Card (HNG Stage 0)</title>
+	</head>
+	<body>
+		<div class="page">
+			<article
+				class="profile-card"
+				data-testid="test-profile-card"
+				aria-labelledby="profile-heading"
+				role="region">
+				<!-- Avatar Column -->
+				<div class="avatar-column" aria-hidden="false">
+					<figure class="avatar" aria-hidden="false">
+						<div
+							id="avatarContainer"
+							data-testid="test-user-avatar"
+							class="avatar-initials"
+							role="img"
+							aria-label="Avatar for Web Deji">
+							Wd
+						</div>
+					</figure>
+
+					<div class="upload-controls" aria-hidden="false">
+						<label class="link-btn" for="fileUpload" tabindex="0">Upload</label>
+						<input
+							id="fileUpload"
+							type="file"
+							accept="image/*"
+							aria-label="Upload avatar image" />
+						<input
+							id="urlInput"
+							class="text"
+							type="url"
+							placeholder="Paste image URL"
+							aria-label="Avatar image URL" />
+						<button id="applyUrl" class="btn" aria-label="Apply avatar URL">
+							Apply
+						</button>
+					</div>
+
+					<div class="small-muted">Tip: upload or paste an image URL</div>
+				</div>
+
+				<!-- Main Content -->
+				<div>
+					<header class="profile-header">
+						<h2 id="profile-heading" class="name" data-testid="test-user-name">
+							Web Deji
+						</h2>
+						<p class="bio" data-testid="test-user-bio">
+							Frontend Developer | Focused on building clean UI
+						</p>
+
+						<div class="meta-row">
+							<div
+								class="time-bubble small-muted"
+								aria-live="polite"
+								data-testid="test-user-time"
+								id="timeNow">
+								0
+							</div>
+						</div>
+
+						<nav
+							class="social-links"
+							aria-label="social links"
+							data-testid="test-user-social-links">
+							<ul>
+								<li>
+									<a
+										id="twitterLink"
+										href="https://twitter.com/web_Deji_Dev"
+										target="_blank"
+										rel="noopener noreferrer"
+										data-testid="test-user-social-twitter"
+										>Twitter</a
+									>
+								</li>
+								<li>
+									<a
+										id="githubLink"
+										href="https://github.com/olusanyaemmanuelpg-sudo"
+										target="_blank"
+										rel="noopener noreferrer"
+										data-testid="test-user-social-github"
+										>GitHub</a
+									>
+								</li>
+								<li>
+									<a
+										id="linkedinLink"
+										href="https://www.linkedin.com/in/olusanya-emmanuel-21546536a"
+										target="_blank"
+										rel="noopener noreferrer"
+										data-testid="test-user-social-linkedin"
+										>LinkedIn</a
+									>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+					<div class="lists" aria-hidden="false">
+						<section class="card-section" aria-labelledby="hobbiesHeading">
+							<h3 id="hobbiesHeading">Hobbies</h3>
+							<ul
+								class="simple-list"
+								data-testid="test-user-hobbies"
+								id="hobbiesList">
+								<li>Coding small projects</li>
+								<li>Reading books</li>
+								<li>Travelling</li>
+							</ul>
+						</section>
+
+						<section class="card-section" aria-labelledby="dislikesHeading">
+							<h3 id="dislikesHeading">Dislikes</h3>
+							<ul
+								class="simple-list"
+								data-testid="test-user-dislikes"
+								id="dislikesList">
+								<li>Poor UX</li>
+								<li>Unreadable code</li>
+								<li>Slow websites</li>
+							</ul>
+						</section>
+					</div>
+
+					<footer class="card-footer" aria-hidden="false">
+						<div class="controls-row">
+							<a
+								class="link-btn"
+								href="https://your-portfolio.example"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Portfolio</a
+							>
+							<button class="cta" id="focusDemo">Focus Test</button>
+						</div>
+					</footer>
+				</div>
+			</article>
+		</div>
+
+		<script src="profileCard.js"></script>
+	</body>
+</html>
