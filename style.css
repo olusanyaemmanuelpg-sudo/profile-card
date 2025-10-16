@@ -237,6 +237,7 @@ footer.card-footer {
 	justify-content: flex-end;
 	gap: 8px;
 	align-items: center;
+	margin-top: 20px;
 }
 .cta {
 	background: var(--accent);
